@@ -1,0 +1,1133 @@
+
+/* Ibrahim A. */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.bgpic img {
+  width: 100%;
+  height: auto;
+  z-index: -1; 
+}
+.container img {
+  filter: brightness(40%);
+}
+.container .content {
+  color: white;
+  position: absolute;
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  top: 20px;
+}
+.container .content h2 {
+  font-size: 50px;
+}
+.blwwelcm {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+}
+.aboutus h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.aboutus p {
+  font-size: medium;
+  z-index: 1;
+}
+.abtt {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+nav {
+  display: flex;
+}
+nav a {
+  margin-left: 12px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  background: #fa0202;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+nav a:hover:after{
+  width: 100%;
+}
+nav .logo {
+  margin-right: auto;
+  padding-left: 40px;
+  font-size: 20px;
+  z-index: 1;
+}
+.strong {
+  padding-top: 40px;
+}
+.word {
+  padding: 0 10px;
+  width: 50%;
+  height: fit-content;
+  text-align: center;
+  vertical-align: middle;
+}
+.word-pic {
+  display: flex;
+}
+.pic {
+  display: flex;
+  width: 65%;
+  height: auto;
+}  
+
+.pic img {
+  width: 100%;
+  height: fit-content;
+  height: fit-content;
+}
+.aboutus {
+  margin: 10px;
+  margin: 0 40px 0 40px;
+  font-family: montserrat;
+  font-weight: 300;
+  font-size: 60px;
+}
+.dropdown {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .container .content h2 {
+    font-size: 40px;
+    font-weight: 450;
+  }
+  .blwwelcm {
+    font-weight: 400;
+    font-size: 25px;
+  }
+  nav a {
+    margin-left: 10px;
+    margin-right: 15px;
+    letter-spacing: 0.3px;
+    padding: 0 5px;
+  }
+  .word-pic {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .aboutus {
+    margin: a;
+  }
+  .word-pic {
+    display: grid;
+    margin: 0;
+    padding: 0;
+  }
+  .pic {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }  
+  .word {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    height: fit-content;
+}
+  .bgpic img {
+    width: 100%;
+    height: 500px; 
+  }
+  nav a {
+    margin-left: 5px;
+    margin-right: 8px;
+  }
+  .container .content h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .blwwelcm {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .strong {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .aboutus .h2class {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: grid;
+  }
+  .bgpic {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
+  .bgpic img {
+    width: 100%;
+    height: 200px;
+  }
+  .container .content {
+    top: 5px;
+  }
+  nav {
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: none;
+  }
+  nav .dropdown a {
+    display: grid;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    width: 65px;
+    height: 18px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 65px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 2px 0px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    font-size: 10px;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .show {
+    display: block;
+  }
+  nav .logo {
+    font-size: 10px;
+    padding-left: 2%;
+  }
+  .container .content h2 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .blwwelcm {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0;
+  }
+  .word-pic {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    margin: 0;
+    padding: 0;
+  }
+  .aboutus .h2class {
+    margin: 0;
+    font-size: 25px;
+  }
+  .word {
+    padding: 0;
+  }
+}
+/* Ishaq I. */
+
+.container3a {
+  width: 100%;
+  height: auto;
+  display: grid;
+  padding-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.hh2class {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  display: block;
+  text-align: center;
+
+}
+.os {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.h2class {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+  padding: 20px;
+}
+.h3class {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+.services {
+  width: 100%;
+  height: auto;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.students-no {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #d9d9d9;
+  justify-content: center;
+}
+.student-profile {
+  width: 100%;
+  height: auto;
+}
+.serv-list {
+  width: 100%;
+  padding: 0 20px;
+}
+.serv-items {
+  top: 150px;
+  width: 250px;
+  height: 200px;
+  float: left;
+  background: #d9d9d9;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+.fa-solid {
+  font-size: 20px;
+  margin-top: 18px;
+  align-items: center;
+}
+.small-t {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 15px;
+}
+.small-t2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: justify;
+  margin: 10px;
+  color: #0c3940;
+}
+.darker {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+.nos {
+  padding-top: 20px;
+}
+.numbs {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.no {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.numbs .no {
+  width: 33%;
+  margin: 0 0px;
+}
+.lighter {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+.gal-top {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.profiles {
+  text-align: center;
+  padding: 20px;
+}
+.profile-pics {
+  margin: 15px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.img3 {
+  height: 190px;
+  width: 180px;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+.picrow {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+.student-name {
+  margin-top: 13px;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.student-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+.btnpic {
+  width: 100%;
+  float: right;
+  height: 40px;
+  margin-right: 5%;
+}
+.btnn {
+  width: 100%;
+  text-align: center;
+}
+.btn-student-title {
+  height: 40px;
+  width: 150px;
+}
+#service {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (max-width: 850px) {
+ .container3a {
+  padding: 0;
+  margin: 0;
+ }
+ .student-profile {
+  padding: 0;
+  margin: 0;
+ }
+ .profiles {
+  padding: 0;
+  margin: 0;
+ }
+ .os {
+  width: 100%;
+ }
+ .services .h2class {
+  font-size: 25px;
+  margin: 0;
+  padding: 35px 0px 0 0;
+  width: auto;
+ }
+ .services .h3class {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
+ }
+ #service .services {
+  margin: 0;
+ }
+ .fa-solid {
+  margin: 10px;
+ }
+ h2.small-t {
+  font-size: 1.2em;
+  margin: 3px;
+  padding: 3px 0;
+ }
+ h3.small-t2 {
+  font-size: 15px;
+  margin: 3px;
+  padding: 3px;
+ }
+ .numbs {
+  text-align: center;
+ }
+}
+@media screen and (max-width: 650px) {
+   .services .h2class {
+    display: inline-block;
+    text-align: center;
+   }
+   .services .h3class {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+   }
+.os {
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.serv-list {
+  display: grid;
+  justify-content: center;
+}
+   .fa-solid {
+    margin: 10px;
+   }
+   h2.small-t {
+    font-size: 1.2em;
+    margin: 3px;
+    padding: 3px 0;
+   }
+   .students-no {
+    width: 100%;
+    padding-bottom: 20px;
+   }
+   h3.small-t2 {
+    font-size: 15px;
+    margin: 3px;
+    padding: 3px;
+   }
+   .nos .h2class {
+    margin: 0;
+   }
+   .students-no .numbs {
+    margin: auto;
+    padding: 0 10px;
+    width: fit-content;
+   }
+   .gal-top {
+    padding: 0 0;
+   }
+   .student-profile .h2class {
+    padding-bottom: 0;
+   }
+   .profile-pics {
+    margin: 5px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .img3 {
+    height: 150px;
+    width: 140px;
+    vertical-align: middle;
+    border-radius: 10px;
+  }
+  .student-name {
+    font-size: 11px;
+  }
+   .btnn {
+    margin-top: 20px;
+   }
+}
+@media screen and (max-width: 650px) {
+  .services .h3class {
+    display: inline-block;
+    font-size: 0.9em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .hh2class {
+    font-size: 25px;
+  }
+  .serv-list {
+    padding: 0;
+  }
+  .nos .h2class {
+    padding: 0;
+    font-size: 25px;
+  }
+  .students-no .darker {
+    font-size: larger;
+  }
+  .students-no {
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+  }
+  .students-no .lighter {
+    font-size: medium;
+  }
+  .no {
+    padding: 5px;
+  }
+  .gal-top .h2class {
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .gal-top .h3class {
+    margin-bottom: 5px;
+    margin-top: 2pxpx;
+    font-size: medium;
+  }
+  .picrow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .btnn {
+    display: none;
+  }
+}
+
+/* Sikirullah A. */
+
+.css {
+  color: rgb(146, 72, 72);
+}
+.project-container {
+  margin-top: 80px;
+}
+.project-container h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+.project-container p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 10px;
+  margin: auto 5px;
+}
+#project-list {
+  height: 282px;
+  width: 282px;
+  margin: 2px;
+}
+#project-details {
+  height: 62px;
+  width: 280px;
+  background: #d9d9d9;
+  padding: 1px;
+  margin-top: -4px;
+}
+#project-details h4 {
+  font-size: 14px;
+  font-weight: 200;
+  padding-left: 10px;
+  padding-bottom: 8px;
+}
+.project-details {
+  font-size: 12px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -35px;
+}
+.project-details P {
+  margin-left: 10px;
+}
+.project-details button {
+  background-color: #0c3940;
+  color: #fff;
+  border: none;
+  width: 92px;
+  height: 18px;
+  margin-right: 10px;
+}
+.partners-container {
+  margin: auto 4%;
+}
+.partners-container h2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 100;
+}
+.partners-container p {
+  text-align: center;
+}
+.partners-list ul {
+  display: grid;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  margin: 0 auto;
+}
+.partners-list ul li {
+  position: relative;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  margin: 20px 0px;
+}
+@media screen and (max-width: 650px) {
+  .project-container {
+    margin-top: 10px;
+  }
+  .project-container .h2class {
+    font-size: 25px;
+  }
+  .project-container .h3class {
+    font-size: medium;
+  }
+  .project-list {
+    margin: 5px;
+    justify-content: center;
+  }
+  #project-list {
+    margin: 5px;
+    position: relative;
+  }
+  .partners-container .h2class {
+    margin: 10px;
+    font-size: 25px;
+  }
+  .partners-container .h3class {
+    margin: 0px;
+    font-size: medium;
+  }
+}
+
+/* Uba R. */
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+}
+.contnr {
+  width: 100%;
+  height: auto;
+}
+.contactus {
+  width: 100%;
+  height: auto;
+  font-family: "Montserrat";
+  padding-top: 20px;
+}
+.h2cl {
+  width: 100%;
+  height: auto;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2.4em;
+  text-align: center;
+}
+.h3c {
+  width: 100%;
+  height: auto;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.picnform {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.pictura {
+  padding-bottom: 20px;
+  padding-right: 20px;
+  height: auto;
+  align-content: center;
+}
+.pictura img {
+  border-radius: 10px;
+}
+.form {
+  width: 100%;
+  display: grid;
+  background-color: rgb(56, 55, 55);
+  border-radius: 10px;
+  height: 600px;
+}
+.imp {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+.buttn {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.form button {
+  align-content: center;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 18px;
+}
+.kin {
+  width: 100%;
+}
+.getint {
+padding: 10px 0;
+  color: white;
+  font-size: 20px;
+}
+.namer {
+  width: 350px;
+  height: 40px;
+  border-radius: 8px;
+}
+.emailer {
+  width: 350px;
+  height: 40px;
+  border-radius: 8px;
+}
+.detailer {
+  padding-top: 15px;
+  width: 350px;
+  height: 210px;
+  border-radius: 8px;
+}
+.sender{
+  background: linear-gradient(to right, #f3fafa, #00234b);
+}
+.wiw {
+  overflow: hidden;
+  display: inline-block;
+}
+.wiw::before {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 20px;
+  background-color: rgb(56, 55, 55);
+  box-shadow: 0 0 10px  rgb(56, 55, 55);
+  filter: blur(1px);
+  opacity: 0.9;
+  transition: 0.3s;
+  transform: rotate(-20deg) translateX(-15px);
+}
+.wiw:hover:before {
+  transform: rotate(-20deg) translate(290px, 90px);
+}
+.fom {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.foothead {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cwj {
+  text-align: left;
+padding: 0 65px;
+}
+.fhead {
+  padding-bottom: 5px;
+}
+.footbottom {
+  display: flex;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+hr {
+  margin: 0 40px;
+}
+.rights {
+  width: 350px;
+}
+.space {
+  width: 700px;
+}
+.ourhandles {
+  color: white;
+  width: 200px;
+}
+footer i {
+  padding-left: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1000px) {
+  .h2cl {
+    font-weight: 450;
+    font-size: 2em;
+  }
+  .h3c {
+    font-weight: 350;
+    font-size: 1.2em;
+  }
+  .picnform {
+    display: grid;
+    padding: 0px;
+  }
+  .pictura {
+    padding: 0px 0px;
+
+  }
+  .pictura img {
+    border-radius: 0px;
+  }
+  .pictura img {
+    min-width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    padding: 0px;
+  }
+  .kin {
+    align-content: center;
+  }
+  .wiw {
+    display: inline-block;
+  }
+  .form {
+    border-radius: 0px;
+  }
+  .getint {
+    font-size: 1.5em;
+    padding-bottom: 0px;
+  }
+  .namer {
+    width: 80%;
+    padding-top: 0px;
+    font-size: large;
+  }
+  .emailer {
+    width: 80%;
+    font-size: large;
+  }
+  .detailer {
+    width: 80%;
+    font-size: large;
+  }
+  .footbottom {
+    padding-left: 40px;
+  }
+  .space {
+    width: 500px;
+  }
+  .lang {
+    font-size: .9em;
+  }
+  hr {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .foothead {
+    padding: 0;
+    width: auto;
+  }
+  .cwj {
+    padding: 0 5px;
+    width: 200px;
+    text-align: center;
+  }
+  .fhead h2 {
+    font-size: large;
+  }
+  .lang {
+    font-size: .9em;
+    padding: 0;
+  }
+  hr {
+    margin: 0 40px;
+  }
+  .footbottom {
+    padding-left: 40px;
+  }
+  .space {
+    width: 500px;
+  }
+  .ourhandles {
+    padding-top: 6px;
+  }
+  .rights {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .h2cl {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .h3c {
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  .picnform {
+    display: grid;
+    padding: 0px;
+  }
+  .pictura {
+    display: none;
+  }
+  .kin {
+    align-content: center;
+    background-color: none;
+  }
+  .imp {
+    padding: 0;
+    height: auto;
+  }
+  .form {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(rgba(104, 100, 100, 0.7) ,rgba(66, 65, 65, 0.7)),url(/css/img/discussion.jpeg);
+    background-color: none;
+    height: 350px;
+  }
+  .getint {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 0px;
+  }
+  .fom {
+    margin: 0;
+    padding: 6px 2px;
+  }
+  .namer {
+    width: 80%;
+    padding: 0px;
+    font-size: .8em;
+    height: 25px;
+  }
+  .emailer {
+    width: 80%;
+    font-size: .8em;
+    height: 25px;
+  }
+  .detailer {
+    width: 80%;
+    font-size: .8em;
+    height: 80px;
+  }
+  .buttn {
+    padding: 0 0;
+    margin: 2px 0px;
+    align-content: center;
+  }
+  .wiw::before {
+    display: none;
+  }
+  .footbottom {
+    padding-left: 0px;
+  }
+  .space {
+    display: none;
+  }
+  .lang {
+    font-weight: 100;
+    font-size: 0.5em;
+  }
+  .foothead {
+    padding: 0;
+    width: 100%;
+  }
+  .fhead h2 {
+    font-size: 1em;
+  }
+  .lang {
+    font-size: .5em;
+    padding: 0;
+  }
+  hr {
+    margin: 0 20px;
+  }
+  .footbottom {
+    padding-left: 20px;
+  }
+  .rights {
+    text-align: center;
+    font-size: 0.5em;
+    padding-left: 0px;
+    width: 250px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
