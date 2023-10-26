@@ -1,3 +1,5 @@
+document.querySelector('.logo-text').textContent = "<CWJ />";
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
