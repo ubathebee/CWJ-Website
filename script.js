@@ -1,5 +1,10 @@
 document.querySelector('.logo-text').textContent = "<CWJ />";
 
+function toggleNav() {
+  var navbar = document.getElementById("navbar");
+  navbar.classList.toggle("show");
+}
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
