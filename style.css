@@ -422,7 +422,8 @@ p{
     padding: 0;
   }
 }
-/* Ishaq I. */
+
+/* Uba Rabiu */
 
 .container3a {
   width: 100%;
@@ -448,6 +449,7 @@ p{
   align-content: center;
   justify-content: center;
 }
+
 .h2class {
   font-family: "Montserrat";
   font-style: normal;
@@ -482,6 +484,7 @@ p{
   background-color: #d9d9d9;
   justify-content: center;
 }
+
 .student-profile {
   width: 100%;
   height: auto;
@@ -557,62 +560,75 @@ p{
   text-transform: capitalize;
   color: #000000;
 }
-.gal-top {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-.profiles {
-  text-align: center;
-  padding: 20px;
-}
-.profile-pics {
-  margin: 15px;
-  line-height: 10px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-.img3 {
-  height: 190px;
-  width: 180px;
-  vertical-align: middle;
-  border-radius: 15px;
-}
-.picrow {
+
+
+/* <!--Abdulmannan--> */
+.student-gallery{
+  margin-top: 3rem;
+  gap: 1rem;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-container{
   width: 100%;
-  height: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
+
+.profile-card {
+  width: 218px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: 320px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
 .student-name {
-  margin-top: 13px;
-  font-weight: bold;
-  font-family: Montserrat, sans-serif;
-  font-size: 13px;
-  margin-bottom: 10px;
+  padding: 0.5rem 0;
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
+
 .student-title {
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
 }
-.btnpic {
-  width: 100%;
-  float: right;
-  height: 40px;
-  margin-right: 5%;
+
+/* Responsive design to make cards wrap on smaller screens */
+@media screen and (max-width: 768px) {
+  .profile-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-card {
+    width: 230px;
+    height: 350px;
+    margin: 30px 0;
+  }
+  .profile-img {
+    width: 100%;
+    height: 320px;
+  }
 }
-.btnn {
-  width: 100%;
-  text-align: center;
-}
-.btn-student-title {
-  height: 40px;
-  width: 150px;
-}
-#service {
-  display: grid;
-  text-align: center;
-  justify-content: center;
-}
+
 @media screen and (max-width: 850px) {
  .container3a {
   padding: 0;
@@ -783,11 +799,8 @@ p{
   }
 }
 
-/* Sikirullah A. */
+/* Benjamin */
 
-.css {
-  color: rgb(146, 72, 72);
-}
 .project-container {
   margin-top: 80px;
 }
@@ -806,70 +819,7 @@ p{
   grid-gap: 10px;
   margin: auto 5px;
 }
-#project-list {
-  height: 282px;
-  width: 282px;
-  margin: 2px;
-}
-#project-details {
-  height: 62px;
-  width: 280px;
-  background: #d9d9d9;
-  padding: 1px;
-  margin-top: -4px;
-}
-#project-details h4 {
-  font-size: 14px;
-  font-weight: 200;
-  padding-left: 10px;
-  padding-bottom: 8px;
-}
-.project-details {
-  font-size: 12px;
-  font-weight: 200;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -35px;
-}
-.project-details P {
-  margin-left: 10px;
-}
-.project-details button {
-  background-color: #0c3940;
-  color: #fff;
-  border: none;
-  width: 92px;
-  height: 18px;
-  margin-right: 10px;
-}
-.partners-container {
-  margin: auto 4%;
-}
-.partners-container h2 {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 15px;
-  font-size: 40px;
-  font-weight: 100;
-}
-.partners-container p {
-  text-align: center;
-}
-.partners-list ul {
-  display: grid;
-  width: 100%;
-  padding: 0;
-  justify-content: center;
-  margin: 0 auto;
-}
-.partners-list ul li {
-  position: relative;
-  height: fit-content;
-  align-items: center;
-  display: flex;
-  margin: 20px 0px;
-}
+
 @media screen and (max-width: 650px) {
   .project-container {
     margin-top: 10px;
@@ -898,143 +848,12 @@ p{
   }
 }
 
-/* Uba R. */
 
 footer {
   width: 100%;
   height: auto;
   background-color: black;
   color: white;
-}
-.contnr {
-  width: 100%;
-  height: auto;
-}
-.contactus {
-  width: 100%;
-  height: auto;
-  font-family: "Montserrat";
-  padding-top: 20px;
-}
-.h2cl {
-  width: 100%;
-  height: auto;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 2.4em;
-  text-align: center;
-}
-.h3c {
-  width: 100%;
-  height: auto;
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 1.5em;
-  text-align: center;
-  padding-bottom: 10px;
-}
-.picnform {
-  width: 100%;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-.pictura {
-  padding-bottom: 20px;
-  padding-right: 20px;
-  height: auto;
-  align-content: center;
-}
-.pictura img {
-  border-radius: 10px;
-}
-.form {
-  width: 100%;
-  display: grid;
-  background-color: rgb(56, 55, 55);
-  border-radius: 10px;
-  height: 600px;
-}
-.imp {
-  display: grid;
-  align-content: center;
-  text-align: center;
-}
-.buttn {
-  width: 100%;
-  height: 70px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-.form button {
-  align-content: center;
-  text-align: center;
-  width: 300px;
-  height: 40px;
-  font-size: 25px;
-  border-radius: 18px;
-}
-.kin {
-  width: 100%;
-}
-.getint {
-padding: 10px 0;
-  color: white;
-  font-size: 20px;
-}
-.namer {
-  width: 350px;
-  height: 40px;
-  border-radius: 8px;
-}
-.emailer {
-  width: 350px;
-  height: 40px;
-  border-radius: 8px;
-}
-.detailer {
-  padding-top: 15px;
-  width: 350px;
-  height: 210px;
-  border-radius: 8px;
-}
-.sender{
-  background: linear-gradient(to right, #f3fafa, #00234b);
-}
-.wiw {
-  overflow: hidden;
-  display: inline-block;
-}
-.wiw::before {
-  content: '';
-  position: absolute;
-  height: 60px;
-  width: 20px;
-  background-color: rgb(56, 55, 55);
-  box-shadow: 0 0 10px  rgb(56, 55, 55);
-  filter: blur(1px);
-  opacity: 0.9;
-  transition: 0.3s;
-  transform: rotate(-20deg) translateX(-15px);
-}
-.wiw:hover:before {
-  transform: rotate(-20deg) translate(290px, 90px);
-}
-.fom {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-.foothead {
-  padding-top: 20px;
-  padding-bottom: 40px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.cwj {
-  text-align: left;
-padding: 0 65px;
 }
 .fhead {
   padding-bottom: 5px;
@@ -1058,13 +877,14 @@ hr {
   color: white;
   width: 200px;
 }
+
 footer i {
   padding-left: 5px;
 }
 footer a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-}
+} 
 @media screen and (max-width: 1000px) {
   .h2cl {
     font-weight: 450;
