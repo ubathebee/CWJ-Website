@@ -115,6 +115,23 @@ p{
   font-size: 18px;
 }
 
+.btn{
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  background: #262626;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+  cursor:pointer;
+}
+
+.btn:hover{
+  font-weight: 500;
+  background-color: #000;
+  border: 1.5px solid #fff;
+}
+
 #more-content {
   transition: max-height 0.7s ease-in-out;
   max-height: 0;
