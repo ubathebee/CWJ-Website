@@ -562,7 +562,7 @@ p{
 }
 
 
-/* Muhammad A. Bello */
+/* Muhammad A Bello */
 .student-gallery{
   min-height: 100vh;
   margin-top: 3rem;
@@ -572,6 +572,18 @@ p{
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+
+.student-gallery h2{
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+}
+
+.student-gallery h3{
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
 }
 
 .profile-container{
