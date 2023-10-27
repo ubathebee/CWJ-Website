@@ -1,23 +1,21 @@
-document.querySelector('.logo-text').textContent = "<CWJ />";
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+document.querySelector('.logo').textContent = "<CWJ />";
 
-function toggleNav() {
-  var navbar = document.getElementById("navbar");
-  navbar.classList.toggle("show");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+function toggleMoreContent() {
+  var moreContent = document.getElementById('more-content');
+  var readMoreButton = document.getElementById('read-more');
+
+  if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+    moreContent.style.display = 'inline'; // Display the hidden content
+    readMoreButton.textContent = 'Read Less'; // Change button text
+  } else {
+    moreContent.style.display = 'none'; // Hide the content
+    readMoreButton.textContent = 'Read More'; // Change button text
+  }
 }
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }

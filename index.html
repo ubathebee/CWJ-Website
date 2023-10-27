@@ -10,27 +10,49 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
   <body>
+
     <!--Muhammad Ayuba Bello-->
-    <div class="nav-container">
-      <div class="content">
-        <nav>
-          <div class="logo">
-            <span class="logo-text"></span>
-          </div>
-          <div id="navbar" class="navbar">
-            <a href="#about">Home</a>
-            <a href="#service">About</a>
-            <a href="#contactus">Service</a>
-            <a href="#contactus">Contact</a>
-          </div>
-          <button onclick="toggleNav()" class="hamburger-menu">&#9776;</button>
-        </nav>
-        <h2 class="strong">WELCOME TO <br> STRONG COMMUNITY OF <br> JAVASCRIPT DEVELOPERS</h2>
-        <p class="blwwelcm">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, <br>
-          eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. <br>
-        </p>
+    <header id="#hero" class="hero">
+      <nav class="navbar">
+        <a href="#" class="logo"></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto:info@codewithjameel.org.ng" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <div class="content-container">
+        <div class="content">
+          <h1>Welcome to CodeWithJameel</h1>
+          <h3>Empowering Tech Enthusiasts and Innovators</h3>
+          <p class="hero-paragraph">
+            CodeWithJameel is where IT excellence meets community! We're a passionate group of IT specialists from across Nigeria, eager to learn the latest tech trends and connect with like-minded individuals. Join us to enhance your skills and be part of a vibrant community.
+            <span id="more-content" style="display: none;">
+              Whether you're an aspiring member or an investor, together, we're shaping a future where innovation thrives, skills are honed, and impactful business solutions are created. Join us on this extraordinary journey of knowledge, collaboration, and success.
+            </span>
+          </p>
+          <button class="btn" id="read-more" onclick="toggleMoreContent()">Read More</button>    
+        </div>
       </div>
-    </div>
+
+      <div class="overlay"></div>
+    </header>
 
     <!--Uba Rabiu-->
     <div class="aboutus" id="about" >
