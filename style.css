@@ -564,6 +564,7 @@ p{
 
 /* <!--Abdulmannan--> */
 .student-gallery{
+  min-height: 100vh;
   margin-top: 3rem;
   gap: 1rem;
   display: flex;
@@ -575,6 +576,8 @@ p{
 
 .profile-container{
   width: 100%;
+  gap: 1rem;
+  height: fit-content;
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -584,7 +587,7 @@ p{
 
 .profile-card {
   width: 218px;
-  height: 300px;
+  height: fit-content;
   margin: 10px;
   text-align: center;
 }
@@ -594,7 +597,7 @@ p{
   height: 320px;
   border-radius: 5px;
   object-fit: cover;
-  border: 1px solid #ddd;
+  border: 1.5px solid #ddd;
 }
 
 .student-name {
@@ -605,9 +608,10 @@ p{
 }
 
 .student-title {
+  font-size: 18px;
   color: #000;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* Responsive design to make cards wrap on smaller screens */
