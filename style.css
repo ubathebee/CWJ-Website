@@ -16,7 +16,7 @@ body {
   color: #fff;
   min-height: 100vh;
   width: 100%;
-  background-image: url(assets/heroH.jpg);
+  background-image: url(assets/heroF.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -62,7 +62,7 @@ a{
 }
 
 .logo{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .nav-link{
