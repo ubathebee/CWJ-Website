@@ -332,6 +332,9 @@ p{
     padding: 1rem 0.5rem;
     background-image: url("assets/phone-bg3.png");
   }
+  .project-container h2{
+    font-size: 35px;
+  }
   .project-container h3{
     padding: 1rem 0;
   }
