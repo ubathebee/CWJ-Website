@@ -1,5 +1,5 @@
 /* Muhammad A Ayyub */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.hero{
+.hero {
   color: #fff;
   min-height: 100vh;
   width: 100%;
@@ -22,50 +22,50 @@ body {
 
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   color: #fff;
   text-decoration: none;
 }
 
-.navbar{
- min-height: 70px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 0 10rem;
- z-index: 5;
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  z-index: 5;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
 
-.logo{
+.logo {
   font-size: 1.5rem;
 }
 
-.nav-link{
+.nav-link {
   transition: 0.7s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: rgb(173, 173, 173);
   font-weight: 500;
 }
 
-.hamburger{
+.hamburger {
   display: none;
   cursor: pointer;
 }
 
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -85,7 +85,7 @@ a{
   align-items: center;
 }
 
-.content{
+.content {
   color: #fff;
   max-width: 50em;
   text-align: center;
@@ -93,20 +93,20 @@ a{
   padding: 10px;
 }
 
-h1{
+h1 {
   margin: 20px 0px 20px;
   font-size: 40px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
 }
 
-h3{
+h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   padding: 10px 1rem;
 }
 
-p{
+p {
   font-size: 25px;
   letter-spacing: 2px;
   font-size: 18px;
@@ -114,7 +114,7 @@ p{
   font-weight: 200;
 }
 
-.btn{
+.btn {
   margin-top: 1rem;
   text-decoration: none;
   color: #000;
@@ -122,10 +122,10 @@ p{
   padding: 10px 1rem;
   border-radius: 10px;
   border: 1.5px solid #fff;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   font-weight: 500;
   color: #fff;
   background-color: #000;
@@ -143,28 +143,31 @@ p{
 }
 
 @media screen and (max-width: 768px) {
-  .logo{
+  .logo {
     font-size: 1rem;
   }
-  .navbar{
+
+  .navbar {
     padding: 0.5rem 1.5rem;
   }
 
-  .hamburger{
+  .hamburger {
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2){
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1){
+
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3){
+
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-menu{
+  .nav-menu {
     position: fixed;
     right: -110%;
     top: 0;
@@ -179,27 +182,343 @@ p{
     transition: 0.3s;
   }
 
-  .nav-item{
+  .nav-item {
     margin: 0;
   }
 
-  .nav-menu.active{
+  .nav-menu.active {
     right: 0;
   }
 
-  .content-container{
+  .content-container {
     margin: 2rem 0;
   }
-} 
+}
 
 /* <!--Uba Rabiu--> */
-/* Add your styles */
+.uba {
+  width: 100%;
+  height: auto;
+  font-family: "josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
 
-/* Uba Rabiu */
-/* Add your styles */
+.aboutus {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.h2abt-us {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  padding: 20px 0 0 0;
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  display: block;
+}
+
+.word-pic {
+  display: flex;
+}
+
+.pic1 img {
+  display: none;
+}
+
+.word {
+  padding: 0 15px;
+  width: 50%;
+  height: fit-content;
+  text-align: justify;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 1.5rem;
+}
+
+.pic {
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.pic img {
+  width: 100%;
+  height: fit-content;
+}
+
+@media screen and (max-width: 750px) {
+  .word-pic {
+    display: grid;
+  }
+
+  .pic {
+    display: none;
+  }
+
+  .pic1 {
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  .pic1 img {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+  }
+
+  .word {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .h2abt-us {
+    margin: 20px auto 10px auto;
+    padding: 10px 0 0 0;
+    font-weight: 300;
+    font-size: 35px;
+  }
+
+  .word {
+    padding: 0 10px;
+    line-height: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .h2abt-us {
+    margin: 10px auto 5px auto;
+    padding: 5px 0 0 0;
+  }
+
+  .word {
+    padding: 0 10px;
+    line-height: 1.2rem;
+    font-size: small;
+  }
+}
+
+.mission {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  text-align: center;
+}
+
+.os {
+  text-align: center;
+  margin: 40px auto 20px auto;
+  padding: 20px 0 0 0;
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  display: block;
+}
+
+.h3mission {
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 25px;
+}
+
+.serv-list {
+  width: auto;
+  height: 100%;
+  padding: 0 0 30px 0;
+  display: flex;
+  margin: 0;
+}
+
+.serv-items {
+  width: 250px;
+  height: 100%;
+  background: rgb(151, 150, 148);
+  border-radius: 15px;
+  margin: auto;
+}
+
+.fa-solid {
+  font-size: 20px;
+  margin: 18px 0 15px 0;
+  align-items: center;
+
+}
+
+.serv-h {
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 15px;
+}
+
+.sub-h {
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 15px;
+  margin: 5px;
+}
+
+.serv-t2 {
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: justify;
+  margin: 0px;
+  padding: 4px;
+  color: #0c3940;
+}
+
+@media screen and (max-width: 850px) {
+  .serv-list {
+    padding: 0 0 15px 0;
+    display: grid;
+    margin: 0;
+    height: auto;
+  }
+
+  .serv-items {
+    width: 450px;
+    height: fit-content;
+    background: rgb(151, 150, 148);
+    border-radius: 15px;
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .serv-items {
+    width: 250px;
+  }
+}
+
+.collabo {
+  width: 100%;
+  height: auto;
+  margin: 70px 0;
+  padding: 60px 0;
+  text-align: center;
+  background-color: rgb(151, 150, 148);
+  justify-content: center;
+}
+
+.nos {
+  margin-bottom: 20px;
+}
+
+.no-benef {
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #000000;
+  padding: 20px 0;
+}
+
+.numbs {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.numbs .no {
+  width: 33%;
+  margin: 0 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  font-family: "josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.light {
+  font-family: "josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+@media screen and (max-width: 750px) {
+  .dark {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .no-benef {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .dark {
+    font-size: 30px;
+  }
+
+  .light {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .no-benef {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+  }
+
+  .dark {
+    font-size: 35px;
+  }
+
+  .light {
+    font-size: 15px;
+  }
+
+  .collabo {
+    margin: 20px 0 0 0;
+  }
+}
+
+
+
+
 
 /* Muhammad A Bello */
-.student-gallery{
+.student-gallery {
   min-height: 100vh;
   margin-top: 3rem;
   gap: 1rem;
@@ -210,20 +529,20 @@ p{
   padding: 2rem;
 }
 
-.student-gallery h2{
+.student-gallery h2 {
   font-size: 40px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
 }
 
-.student-gallery h3{
+.student-gallery h3 {
   text-align: center;
   font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
 }
 
-.profile-container{
+.profile-container {
   width: 100%;
   gap: 1rem;
   height: fit-content;
@@ -264,17 +583,19 @@ p{
 }
 
 @media screen and (max-width: 768px) {
-  .profile-container{
-    display:flex;
+  .profile-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .profile-card {
     width: 230px;
     height: 350px;
     margin: 30px 0;
   }
+
   .profile-img {
     width: 100%;
     height: 320px;
@@ -295,14 +616,14 @@ p{
   background-image: url("assets/project.jpg");
 }
 
-.project-container h2{
+.project-container h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
   text-align: center;
   font-size: 45px;
 }
 
-.project-container h3{
+.project-container h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
   text-align: center;
@@ -310,7 +631,7 @@ p{
   padding: 1.5rem 0;
 }
 
-.project-container p{
+.project-container p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
   text-align: justify;
@@ -318,7 +639,7 @@ p{
   max-width: 25rem;
 }
 
-.button-container{
+.button-container {
   width: 100%;
   justify-content: center;
   max-width: 25rem;
@@ -327,21 +648,23 @@ p{
 }
 
 @media screen and (max-width: 768px) {
-  .project-container{
+  .project-container {
     height: 100vh;
     padding: 1rem 0.5rem;
     background-image: url("assets/phone-bg3.png");
   }
-  .project-container h2{
+
+  .project-container h2 {
     font-size: 35px;
   }
-  .project-container h3{
+
+  .project-container h3 {
     padding: 1rem 0;
   }
 }
 
 /* social media */
-.media-container{
+.media-container {
   height: 8rem;
   display: flex;
   align-items: center;
@@ -358,13 +681,13 @@ p{
   color: #262626;
 }
 
-footer{
+footer {
   width: 100%;
   color: #fff;
   background-color: #000;
 }
 
-footer p{
+footer p {
   padding: 1rem 2rem;
   display: flex;
   color: #fff;
