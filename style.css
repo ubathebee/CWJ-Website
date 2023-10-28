@@ -336,3 +336,22 @@ p{
     padding: 1rem 0;
   }
 }
+
+/* social media */
+.media-container{
+  height: 10rem;
+}
+
+footer{
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+}
+
+footer p{
+  padding: 1rem 2rem;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
