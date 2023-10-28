@@ -339,7 +339,7 @@ p{
 
 /* social media */
 .media-container{
-  height: 10rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,7 +352,7 @@ p{
 }
 
 .media-container a i:hover {
-  color: #007bff;
+  color: #262626;
 }
 
 footer{
