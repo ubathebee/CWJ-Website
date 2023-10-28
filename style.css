@@ -103,6 +103,7 @@ h1{
 h3{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
+  padding: 10px 1rem;
 }
 
 p{
@@ -116,9 +117,9 @@ p{
 .btn{
   margin-top: 1rem;
   text-decoration: none;
-  color: white;
-  background: #262626;
-  padding: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px 1rem;
   border-radius: 10px;
   border: 1.5px solid #fff;
   cursor:pointer;
@@ -126,6 +127,7 @@ p{
 
 .btn:hover{
   font-weight: 500;
+  color: #fff;
   background-color: #000;
   border: 1.5px solid #fff;
 }
