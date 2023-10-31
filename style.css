@@ -110,7 +110,7 @@ p {
   font-size: 25px;
   letter-spacing: 2px;
   font-size: 18px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans';
   font-weight: 200;
 }
 
@@ -196,178 +196,121 @@ p {
 }
 
 /* <!--Uba Rabiu--> */
-.uba {
-  width: 100%;
-  height: auto;
-  font-family: "josefin Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  display: grid;
-}
-
 .aboutus {
-  width: 100%;
-  height: auto;
-  margin: 10px 0;
-}
-
-.h2abt-us {
-  text-align: center;
-  margin: 40px auto 20px auto;
-  padding: 20px 0 0 0;
-  font-family: "josefin Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 40px;
-  display: block;
-}
-
-.word-pic {
+  gap: 2rem;
   display: flex;
+  padding: 5rem 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.pic1 img {
-  display: none;
+.aboutus h2{
+  font-size: 40px;
+  font-weight: 200;
+  width: fit-content;
+  text-align: center;
+  font-family: "josefin Sans";
 }
 
-.word {
-  padding: 0 15px;
-  width: 50%;
-  height: fit-content;
+.about-content{
+  gap: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.about-content p{
+  flex: 1;
+  font-weight: 200;
+  width: 500px;
   text-align: justify;
-  vertical-align: middle;
-  margin-top: auto;
-  margin-bottom: auto;
-  line-height: 1.5rem;
+  vertical-align: top;
+  line-height: 1rem;
+  font-size: 16px;
+  font-family: 'Josefin Sans';
 }
 
-.pic {
-  display: flex;
-  width: 50%;
-  height: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.pic img {
-  width: 100%;
+.about-content img{
+  flex: 1;
+  width: 500px;
   height: fit-content;
 }
 
-@media screen and (max-width: 750px) {
-  .word-pic {
-    display: grid;
+@media screen and (max-width: 768px) {
+  .about-content{
+    padding: 0 0.5rem;
+    flex-direction: column;
   }
-
-  .pic {
-    display: none;
-  }
-
-  .pic1 {
+  .about-content p{
     width: 100%;
-    height: auto;
-    margin: 8px 0;
-    padding: 0;
   }
-
-  .pic1 img {
-    display: block;
-    width: 100%;
-    height: fit-content;
-    margin: 0;
-    padding: 0;
-  }
-
-  .word {
+  .about-content img{
     width: 100%;
   }
 }
 
-@media screen and (max-width: 650px) {
-  .h2abt-us {
-    margin: 20px auto 10px auto;
-    padding: 10px 0 0 0;
-    font-weight: 300;
-    font-size: 35px;
-  }
-
-  .word {
-    padding: 0 10px;
-    line-height: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .h2abt-us {
-    margin: 10px auto 5px auto;
-    padding: 5px 0 0 0;
-  }
-
-  .word {
-    padding: 0 10px;
-    line-height: 1.2rem;
-    font-size: small;
-  }
-}
-
+/* <!--Uba Rabiu--> */
 .mission {
+  gap: 2rem;
   width: 100%;
-  height: fit-content;
-  display: grid;
+  min-height: 100vh;
+  display: flex;
+  margin-top: 5rem;
   text-align: center;
+  flex-direction: column;
 }
 
-.os {
+.mission h2 {
+  font-size: 45px;
+  font-weight: 200;
   text-align: center;
-  margin: 40px auto 20px auto;
-  padding: 20px 0 0 0;
-  font-family: "josefin Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 40px;
-  display: block;
+  font-family: "josefin Sans";
 }
 
-.h3mission {
-  font-family: "josefin Sans", sans-serif;
-  font-style: normal;
-  font-weight: 350;
+.mission p{
   font-size: 25px;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-family: 'Josefin Sans';
 }
 
 .serv-list {
-  width: auto;
-  height: 100%;
-  padding: 0 0 30px 0;
+  gap: 2.5rem;
   display: flex;
-  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .serv-items {
-  width: 250px;
-  height: 100%;
-  background: rgb(151, 150, 148);
+  gap: 0.9rem;
+  width: 350px;
+  display: flex;
+  height: 400px;
+  max-width: 500px;
   border-radius: 15px;
-  margin: auto;
+  padding: 1.5rem 15px;
+  background: #D9D9D9;
+  flex-direction: column;
 }
 
 .fa-solid {
-  font-size: 20px;
-  margin: 18px 0 15px 0;
+  font-size: 40px;
   align-items: center;
-
 }
 
-.serv-h {
+.serv-items h2 {
   text-align: center;
-  font-family: "josefin Sans", sans-serif;
+  font-family: "josefin Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 30px;
   line-height: 15px;
 }
 
-.sub-h {
+.serv-items h3 {
   text-align: center;
   font-family: "josefin Sans", sans-serif;
   font-style: normal;
@@ -377,7 +320,7 @@ p {
   margin: 5px;
 }
 
-.serv-t2 {
+.serv-items p {
   font-family: "josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 200;
@@ -389,133 +332,63 @@ p {
   color: #0c3940;
 }
 
-@media screen and (max-width: 850px) {
-  .serv-list {
-    padding: 0 0 15px 0;
-    display: grid;
-    margin: 0;
-    height: auto;
-  }
-
-  .serv-items {
-    width: 450px;
-    height: fit-content;
-    background: rgb(151, 150, 148);
-    border-radius: 15px;
-    margin: 0 auto 10px auto;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .serv-items {
-    width: 250px;
-  }
-}
-
-.collabo {
-  width: 100%;
-  height: auto;
-  margin: 70px 0;
-  padding: 60px 0;
-  text-align: center;
-  background-color: rgb(151, 150, 148);
-  justify-content: center;
-}
-
-.nos {
-  margin-bottom: 20px;
-}
-
-.no-benef {
-  font-family: "josefin Sans", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 40px;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #000000;
-  padding: 20px 0;
-}
-
-.numbs {
-  display: flex;
-  padding-bottom: 50px;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.numbs .no {
-  width: 33%;
-  margin: 0 0px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.dark {
-  font-family: "josefin Sans", sans-serif;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #000000;
-}
-
-.light {
-  font-family: "josefin Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #000000;
-}
-
-@media screen and (max-width: 750px) {
-  .dark {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .no-benef {
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-  }
-
-  .dark {
-    font-size: 30px;
-  }
-
-  .light {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .no-benef {
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
-  }
-
-  .dark {
+@media screen and (max-width: 768px) {
+  .mission{
     font-size: 35px;
   }
-
-  .light {
-    font-size: 15px;
-  }
-
-  .collabo {
-    margin: 20px 0 0 0;
-  }
 }
 
+/* <!--Uba Rabiu--> */
+.beneficiaries {
+  gap: 4rem;
+  display: flex;
+  height: 420px;
+  margin-top: 5rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #D9D9D9;
+}
 
+.beneficiaries .heading{
+  font-size: 45px;
+  font-weight: 200;
+  font-family: "josefin Sans";
+}
 
+.students{
+  gap: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: center;
+}
 
+.students h2{
+  font-weight: 300;
+  font-family: 'Josefin Sans';
+}
+
+.skill p{
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 1rem;
+  font-family: "josefin Sans";
+}
+
+@media screen and (max-width: 768px) {
+  .beneficiaries {
+    height: 100vh;
+  }
+  .beneficiaries .heading{
+    font-size: 35px;
+  }
+  .students{
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
 
 /* Muhammad A Bello */
 .student-gallery {

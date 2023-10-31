@@ -94,3 +94,57 @@ function generateStudentProfiles() {
 
 // Call the function to generate student profiles as cards
 generateStudentProfiles();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const services = [
+    {
+      icon: 'fa-globe',
+      title: 'Education',
+      subtitle: 'Skill Development',
+      description: "Whether you're a seasoned developer or just starting your tech journey, we offer a platform for skill development. Choose your area of interest, and let us guide you towards mastery.",
+    },
+    {
+      icon: 'fa-network-wired',
+      title: 'Experience',
+      subtitle: 'Project Collaboration',
+      description: "We believe that the best way to learn and grow is by working on real-world projects. CodeWithJameel provides opportunities for hands-on experience through collaborative projects.",
+    },
+    {
+      icon: 'fa-mobile-button',
+      title: 'Employment',
+      subtitle: 'Business Focus',
+      description: "It's not just about learning; we are passionate about innovation. Join us, and you'll have the chance to work on projects that have real-world applications and the potential to turn into viable businesses.",
+    },
+  ];
+
+  const servList = document.getElementById('servList');
+
+  services.forEach(service => {
+    const card = document.createElement('div');
+    card.className = 'serv-items';
+    card.innerHTML = `
+      <i class="fa-solid ${service.icon}"></i>
+      <h2>${service.title}</h2>
+      <h3>${service.subtitle}</h3>
+      <p>${service.description}</p>
+    `;
+    servList.appendChild(card);
+  });
+
+  const resizeCards = () => {
+    if (window.innerWidth >= 768) {
+      servList.style.display = 'flex';
+      servList.style.flexDirection = 'row';
+    } else {
+      servList.style.display = 'flex';
+      servList.style.flexDirection = 'column';
+    }
+  };
+
+  // Initial layout based on screen size
+  resizeCards();
+
+  // Update layout when the window is resized
+  window.addEventListener('resize', resizeCards);
+});
