@@ -206,9 +206,8 @@ p {
 }
 
 .aboutus h2{
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 200;
-  width: fit-content;
   text-align: center;
   font-family: "josefin Sans";
 }
@@ -243,7 +242,6 @@ p {
   }
   .about-content p{
     width: 100%;
-    /* text-align:start; */
   }
   .about-content img{
     width: 100%;
@@ -303,12 +301,10 @@ p {
 }
 
 .serv-items h2 {
+  font-size: 30px;
+  font-weight: 300;
   text-align: center;
   font-family: "josefin Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 15px;
 }
 
 .serv-items h3 {
@@ -363,6 +359,7 @@ p {
 .beneficiaries .heading{
   font-size: 45px;
   font-weight: 200;
+  text-align: center;
   font-family: "josefin Sans";
 }
 
@@ -376,8 +373,10 @@ p {
 }
 
 .students h2{
-  font-weight: 300;
-  font-family: 'Josefin Sans';
+  font-size: 45px;
+  font-weight: 200;
+  text-align: center;
+  font-family: "josefin Sans";
 }
 
 .skill p{
@@ -389,7 +388,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .beneficiaries {
-    height: 100vh;
+    padding: 5rem 0;
+    height: fit-content;
   }
   .beneficiaries .heading{
     font-size: 35px;
@@ -413,8 +413,8 @@ p {
 }
 
 .student-gallery h2 {
-  font-size: 40px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  font-family: 'Josefin Sans';
   font-weight: 200;
 }
 
