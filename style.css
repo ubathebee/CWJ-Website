@@ -94,24 +94,24 @@ a {
 }
 
 h1 {
-  margin: 20px 0px 20px;
   font-size: 40px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 200;
+  margin: 20px 20px;
+  font-family: 'Josefin Sans';
 }
 
 h3 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   padding: 10px 1rem;
+  font-family: 'Josefin Sans';
 }
 
 p {
-  font-size: 25px;
-  letter-spacing: 2px;
-  font-size: 18px;
-  font-family: 'Josefin Sans';
+  font-size: 16px;
   font-weight: 200;
+  letter-spacing: 2px;
+  font-family: 'Josefin Sans';
 }
 
 .btn {
@@ -278,6 +278,7 @@ p {
 
 .serv-list {
   gap: 2.5rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -335,6 +336,11 @@ p {
 @media screen and (max-width: 768px) {
   .mission{
     font-size: 35px;
+    padding: 0 2rem;
+  }
+  .serv-items {
+    width: 300px;
+    padding: 1rem 15px;
   }
 }
 

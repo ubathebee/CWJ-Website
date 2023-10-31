@@ -148,3 +148,40 @@ document.addEventListener('DOMContentLoaded', function () {
   // Update layout when the window is resized
   window.addEventListener('resize', resizeCards);
 });
+
+// Adding Animation on scroll
+function animateOnScroll() {
+  const elements = document.querySelectorAll('.animate-on-scroll');
+
+  elements.forEach((element, index) => {
+    const delay = index * 0.2; // Adjust the delay between elements
+    element.style.opacity = 0;
+
+    const animation = {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: delay,
+      },
+    };
+
+    // Apply the animation to the element
+    window.addEventListener('scroll', () => {
+      const elementTop = element.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (elementTop < screenHeight * 0.75) {
+        element.style.opacity = 1;
+        element.style.transform = 'translateY(0)';
+      } else {
+        element.style.opacity = 0;
+        element.style.transform = 'translateY(50px)';
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  animateOnScroll();
+});
