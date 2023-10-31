@@ -222,12 +222,11 @@ p {
 
 .about-content p{
   flex: 1;
-  font-weight: 200;
   width: 500px;
-  text-align: justify;
-  vertical-align: top;
-  line-height: 1rem;
   font-size: 16px;
+  font-weight: 200;
+  line-height: 1rem;
+  vertical-align: top;
   font-family: 'Josefin Sans';
 }
 
@@ -244,6 +243,7 @@ p {
   }
   .about-content p{
     width: 100%;
+    /* text-align:start; */
   }
   .about-content img{
     width: 100%;
