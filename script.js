@@ -13,14 +13,14 @@ function toggleMoreContent() {
 
   if (moreContent.style.display === 'none' || moreContent.style.display === '') {
     moreContent.style.display = 'inline'; // Display the hidden content
-    readMoreButton.textContent = 'Read Less'; // Change button text
+    readMoreButton.textContent = 'Read Less';
   } else {
     moreContent.style.display = 'none'; // Hide the content
-    readMoreButton.textContent = 'Read More'; // Change button text
+    readMoreButton.textContent = 'Read More';
   }
 }
 
-// Student data array// Student data array (example data)
+// Student data array
 const students = [
   {
     name: "Anas Shinkafi",
@@ -154,14 +154,14 @@ function animateOnScroll() {
   const elements = document.querySelectorAll('.animate-on-scroll');
 
   elements.forEach((element, index) => {
-    const delay = index * 0.2; // Adjust the delay between elements
+    const delay = index * 0.3;
     element.style.opacity = 0;
 
     const animation = {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.6,
         delay: delay,
       },
     };
