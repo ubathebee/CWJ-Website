@@ -7,6 +7,24 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 })
 
+function typewriterEffect() {
+  const headerText = document.getElementById('header-text');
+  const textToType = "Welcome to CodeWithJameel";
+  let currentIndex = 0;
+
+  const typingInterval = setInterval(() => {
+    if (currentIndex <= textToType.length) {
+      headerText.textContent = textToType.substring(0, currentIndex);
+      currentIndex++;
+    } else {
+      clearInterval(typingInterval);
+    }
+  }, 180);//(in milliseconds)
+}
+
+typewriterEffect(); // Start the typewriter effect when the page loads
+
+
 function toggleMoreContent() {
   var moreContent = document.getElementById('more-content');
   var readMoreButton = document.getElementById('read-more');
