@@ -52,8 +52,9 @@ a {
 }
 
 .logo {
+  font-weight: 200;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-family: monospace;
 }
 
 .nav-link {
