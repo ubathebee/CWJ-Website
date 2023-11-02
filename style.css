@@ -98,21 +98,21 @@ a {
   padding: 10px;
 }
 
-h1 {
+.hero h1 {
   font-size: 45px;
   font-weight: 200;
   margin: 20px 20px;
   font-family: 'Roboto'; 
 }
 
-h3 {
+.hero h3 {
   font-size: 18px;
   font-weight: 300;
   padding: 10px 1rem;
   font-family: 'Josefin Sans';
 }
 
-p {
+.hero p {
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -152,9 +152,18 @@ p {
   .logo {
     font-size: 1rem;
   }
-  h1 {
-    font-size: 25px;
+  .hero h1 {
+    font-size: 30px;
+    padding: 0 3rem;
   }
+  .hero h3 {
+  font-size: 18px;
+  padding: 0 3.5rem;
+}
+.hero p {
+  font-size: 16px;
+  margin: 0 2rem;
+}
   .navbar {
     padding: 0.5rem 1.5rem;
   }
@@ -251,6 +260,9 @@ p {
     padding: 0 0.5rem;
     flex-direction: column;
   }
+  .aboutus h2{
+    font-size: 30px;
+  }
   .about-content p{
     width: 100%;
     text-align: justify;
@@ -279,10 +291,10 @@ p {
 }
 
 .mission p{
-  font-size: 25px;
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 2px;
+  padding-bottom: 2rem;
   font-family: 'Josefin Sans';
 }
 
@@ -316,7 +328,7 @@ p {
   font-size: 35px;
   font-weight: 200;
   text-align: center;
-  font-family: "josefin Sans";
+  font-family: "Roboto";
 }
 
 .serv-items h3 {
@@ -340,8 +352,10 @@ p {
 
 @media screen and (max-width: 768px) {
   .mission{
-    font-size: 35px;
     padding: 0 2rem;
+  }
+  .mission h2 {
+    font-size: 30px;
   }
   .serv-items {
     width: 300px;
@@ -401,7 +415,7 @@ p {
     height: fit-content;
   }
   .beneficiaries .heading{
-    font-size: 25px;
+    font-size: 30px;
   }
   .students{
     gap: 2rem;
@@ -482,6 +496,9 @@ p {
     align-items: center;
     justify-content: center;
   }
+  .student-gallery h2 {
+    font-size: 30px;
+  }
 
   .profile-card {
     width: 230px;
@@ -553,11 +570,11 @@ p {
   }
 
   .project-container h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .project-container h3 {
-    padding: 1rem 0;
+    padding: 1rem 2.5rem;
   }
 
   .desc{
