@@ -290,7 +290,7 @@ a {
   font-family: 'Roboto';
 }
 
-.mission p{
+.mission h3{
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -356,6 +356,10 @@ a {
   }
   .mission h2 {
     font-size: 30px;
+  }
+  .mission h3{
+    font-size: 16px;
+    font-weight: 200;
   }
   .serv-items {
     width: 300px;
