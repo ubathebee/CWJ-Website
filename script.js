@@ -184,7 +184,7 @@ function animateOnScroll() {
       },
     };
 
-    // Apply the animation to the element
+        // Apply the animation to the element
     window.addEventListener('scroll', () => {
       const elementTop = element.getBoundingClientRect().top;
       const screenHeight = window.innerHeight;
@@ -199,10 +199,6 @@ function animateOnScroll() {
     });
   });
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-  animateOnScroll();
-});
 
 //Scrolling Effect
 
