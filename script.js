@@ -117,19 +117,19 @@ generateStudentProfiles();
 document.addEventListener('DOMContentLoaded', function () {
   const services = [
     {
-      icon: 'fa-globe',
+      icon: 'fa-graduation-cap',
       title: 'Education',
       subtitle: 'Skill Development',
       description: "Whether you're a seasoned developer or just starting your tech journey, we offer a platform for skill development. Choose your area of interest, and let us guide you towards mastery.",
     },
     {
-      icon: 'fa-network-wired',
+      icon: 'fa-clock',
       title: 'Experience',
       subtitle: 'Project Collaboration',
       description: "We believe that the best way to learn and grow is by working on real-world projects. CodeWithJameel provides opportunities for hands-on experience through collaborative projects.",
     },
     {
-      icon: 'fa-mobile-button',
+      icon: 'fa-briefcase',
       title: 'Employment',
       subtitle: 'Business Focus',
       description: "It's not just about learning; we are passionate about innovation. Join us, and you'll have the chance to work on projects that have real-world applications and the potential to turn into viable businesses.",
