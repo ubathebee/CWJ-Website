@@ -1,4 +1,7 @@
 /* Muhammad A Ayyub */
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +24,7 @@ body {
   z-index: 1;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +38,7 @@ body {
   transition: 0.3s;
 }
 
-.logo-content{
+.logo-content {
   display: block;
 }
 
@@ -48,32 +51,35 @@ body {
   text-decoration: none;
 }
 
-.navigation{
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu{
+.menu {
+  margin-right: 8rem;
+
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   z-index: 1;
   transition: 0.5s;
+
 }
 
-.menu li{
+.menu li {
   list-style-type: none;
 }
 
-.menu li a{
+.menu li a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 10px 25px;
+  padding: 10px 10px;
   display: flex;
-  font-size: 34;
+  font-size: 14;
   font-weight: 300;
   text-decoration: none;
   font-family: 'Roboto';
@@ -81,11 +87,11 @@ body {
   transition: 0.3s;
 }
 
-.menu li a:hover{
+.menu li a:hover {
   font-weight: 400;
 }
 
-.hamburger{
+.hamburger {
   position: relative;
   width: 30px;
   height: 4px;
@@ -97,7 +103,7 @@ body {
 }
 
 .hamburger::before,
-.hamburger::after{
+.hamburger::after {
   content: "";
   position: absolute;
   height: 4px;
@@ -107,17 +113,17 @@ body {
   transition: 0.3s;
 }
 
-.hamburger::before{
+.hamburger::before {
   top: -10px;
   width: 20px;
 }
 
-.hamburger::after{
+.hamburger::after {
   top: 10px;
   width: 25px;
 }
 
-.toggle-menu{
+.toggle-menu {
   position: absolute;
   width: 30px;
   height: 100%;
@@ -127,47 +133,49 @@ body {
 }
 
 .hamburger,
-.toggle-menu{
+.toggle-menu {
   display: none;
-} 
+}
 
-.navigation input:checked ~ .hamburger{
+.navigation input:checked~.hamburger {
   background: transparent;
 }
 
-.navigation input:checked ~ .hamburger::before{
+.navigation input:checked~.hamburger::before {
   top: 0;
   transform: rotate(-45deg);
   width: 30px;
 }
 
-.navigation input:checked ~ .hamburger::after{
+.navigation input:checked~.hamburger::after {
   top: 0;
   transform: rotate(45deg);
   width: 30px;
 }
 
-.navigation input:checked ~ .menu{
+.navigation input:checked~.menu {
   top: 0;
 }
 
 @media screen and (max-width: 768px) {
-  .navigation input:checked ~ .hamburger::before{
+  .navigation input:checked~.hamburger::before {
     background: #000;
   }
-  
-  .navigation input:checked ~ .hamburger::after{
+
+  .navigation input:checked~.hamburger::after {
     background: #000;
   }
+
   .hamburger,
-  .toggle-menu{
+  .toggle-menu {
     display: block;
-  } 
-  .navbar{
+  }
+
+  .navbar {
     padding: 10px 20px;
   }
 
-  .menu{
+  .menu {
     justify-content: start;
     flex-direction: column;
     align-items: center;
@@ -180,39 +188,45 @@ body {
     padding-top: 1.5rem;
   }
 
-  .menu li{
-      width: 100%;
+  .menu li {
+    width: 100%;
   }
 
   .menu li a,
-  .menu li a:hover{
+  .menu li a:hover {
     color: #000;
-      padding: 30px;
-      font-size: 18px;
-      /* box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset; */
-      font-weight: 400;
-      font-family: 'Roboto';
-      transition: 0.3s;
+    padding: 30px;
+    font-size: 18px;
+    /* box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset; */
+    font-weight: 400;
+    font-family: 'Roboto';
+    transition: 0.3s;
   }
+
   .hero h1 {
     font-size: 30px;
     padding: 0 3rem;
   }
+
   .hero h3 {
-  font-size: 18px;
-  padding: 0 3.5rem;
+    font-size: 18px;
+    padding: 0 3.5rem;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin: 0 2rem;
+  }
+
+  .content-container {
+    margin: 2rem 0;
+  }
+
+  .content-container p {
+    padding: 2rem 0;
+  }
 }
-.hero p {
-  font-size: 16px;
-  margin: 0 2rem;
-}
-.content-container {
-  margin: 2rem 0;
-}
-.content-container p {
-  padding: 2rem 0;
-}
-}
+
 /* 
 li {
   list-style: none;
@@ -274,6 +288,7 @@ a {
 
 .content-container {
   margin: 5rem 0;
+  margin-top: 14rem;
   color: #fff;
   width: 100%;
   height: 100%;
@@ -294,7 +309,7 @@ a {
   font-size: 45px;
   font-weight: 200;
   margin: 20px 20px;
-  font-family: 'Roboto'; 
+  font-family: 'Roboto';
 }
 
 .hero h3 {
@@ -321,6 +336,8 @@ a {
   font-weight: 200;
   border: 1.5px solid #fff;
   font-family: 'Josefin Sans';
+  width: 9.5rem;
+  height: 3.5rem;
 }
 
 .btn:hover {
@@ -405,7 +422,7 @@ a {
     right: 0;
   } */
 
- 
+
 }
 
 /* <!--Uba Rabiu--> */
@@ -418,21 +435,21 @@ a {
   flex-direction: column;
 }
 
-.aboutus h2{
+.aboutus h2 {
   font-size: 45px;
   font-weight: 200;
   text-align: center;
-  font-family: 'Roboto'; 
+  font-family: 'Roboto';
 }
 
-.about-content{
+.about-content {
   gap: 2.5rem;
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
 }
 
-.about-content p{
+.about-content p {
   flex: 1;
   width: 500px;
   font-size: 16px;
@@ -442,25 +459,28 @@ a {
   font-family: 'Josefin Sans';
 }
 
-.about-content img{
+.about-content img {
   flex: 1;
   width: 500px;
   height: fit-content;
 }
 
 @media screen and (max-width: 768px) {
-  .about-content{
+  .about-content {
     padding: 0 0.5rem;
     flex-direction: column;
   }
-  .aboutus h2{
+
+  .aboutus h2 {
     font-size: 30px;
   }
-  .about-content p{
+
+  .about-content p {
     width: 100%;
     text-align: justify;
   }
-  .about-content img{
+
+  .about-content img {
     width: 100%;
   }
 }
@@ -477,13 +497,14 @@ a {
 }
 
 .mission h2 {
+  margin-top: 5rem;
   font-size: 45px;
   font-weight: 200;
   text-align: center;
   font-family: 'Roboto';
 }
 
-.mission h3{
+.mission h3 {
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 2px;
@@ -544,21 +565,25 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .mission{
+  .mission {
     padding: 0 2rem;
   }
+
   .mission h2 {
     font-size: 30px;
   }
-  .mission h3{
+
+  .mission h3 {
     font-size: 16px;
     font-weight: 200;
   }
+
   .serv-items {
     width: 300px;
     padding: 1rem 15px;
     text-align: center;
   }
+
   .serv-items p {
     text-align: center;
   }
@@ -576,14 +601,14 @@ a {
   background-color: #D9D9D9;
 }
 
-.beneficiaries .heading{
+.beneficiaries .heading {
   font-size: 45px;
   font-weight: 200;
   text-align: center;
   font-family: 'Roboto';
 }
 
-.students{
+.students {
   gap: 5rem;
   width: 100%;
   display: flex;
@@ -592,14 +617,14 @@ a {
   justify-content: center;
 }
 
-.students h2{
+.students h2 {
   font-size: 45px;
   font-weight: 200;
   text-align: center;
   font-family: 'Roboto';
 }
 
-.skill p{
+.skill p {
   font-size: 20px;
   font-weight: 200;
   padding-top: 1rem;
@@ -611,10 +636,12 @@ a {
     padding: 5rem 0;
     height: fit-content;
   }
-  .beneficiaries .heading{
+
+  .beneficiaries .heading {
     font-size: 30px;
   }
-  .students{
+
+  .students {
     gap: 2rem;
     flex-direction: column;
   }
@@ -693,6 +720,7 @@ a {
     align-items: center;
     justify-content: center;
   }
+
   .student-gallery h2 {
     font-size: 30px;
   }
@@ -738,7 +766,7 @@ a {
   font-family: 'Josefin Sans';
 }
 
-.desc{
+.desc {
   display: flex;
   max-width: 20rem;
   margin: 2rem 4rem;
@@ -774,7 +802,7 @@ a {
     padding: 1rem 2.5rem;
   }
 
-  .desc{
+  .desc {
     max-width: 100%;
     margin: 0.5rem;
   }
@@ -819,7 +847,8 @@ footer p {
     font-size: 30px;
     padding: 5px 0.4rem;
   }
-  footer p{
+
+  footer p {
     font-size: 10px;
   }
 }
