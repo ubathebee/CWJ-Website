@@ -39,10 +39,11 @@ body {
   display: block;
 }
 
-.logo-content a{
+.logo-content a {
+  margin-left: 10rem;
   color: #fff;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: monospace;
   text-decoration: none;
 }
