@@ -203,3 +203,30 @@ function animateOnScroll() {
 document.addEventListener('DOMContentLoaded', function () {
   animateOnScroll();
 });
+
+//Scrolling Effect
+
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
+    // Ensure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Calculate the offset, considering the space (20px)
+      var targetOffset = $(hash).offset().top - 20;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      $('html, body').animate({
+        scrollTop: targetOffset
+      }, 800, function () {
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
