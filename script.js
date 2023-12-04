@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-document.querySelector('.logo').textContent = "<CWJ />";
+document.querySelector('.logo').textContent = "<CWJ/>";
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
