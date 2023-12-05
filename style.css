@@ -777,8 +777,6 @@ a {
 }
 
 .project-container h3 {
-  font-size: 18px;
-  font-weight: 200;
   text-align: center;
   padding: 1.5rem 0;
   font-family: 'Josefin Sans';
@@ -786,8 +784,8 @@ a {
 
 .desc {
   display: flex;
-  max-width: 20rem;
-  margin: 2rem 4rem;
+  max-width: 45rem;
+  margin: 10rem 4rem;
   align-items: center;
   flex-direction: column;
   justify-content: center;
