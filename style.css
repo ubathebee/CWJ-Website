@@ -227,6 +227,20 @@ body {
   }
 }
 
+/*this was added for the about us css*/
+.contents-text {
+  margin-top: 1.5rem;
+  margin-left: 0rem;
+  font-family: 'Roboto';
+  color: black;
+}
+
+.contents-pic {
+
+  margin-right: 0rem;
+
+}
+
 /* 
 li {
   list-style: none;
