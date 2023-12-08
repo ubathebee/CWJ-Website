@@ -229,7 +229,7 @@ body {
 
 /*this was added for the about us css*/
 .contents-text {
-  margin-top: 1.5rem;
+  margin-top: 0rem;
   margin-left: 0rem;
   font-family: 'Roboto';
   color: black;
@@ -238,7 +238,7 @@ body {
 .contents-pic {
 
   margin-right: 0rem;
-
+  margin-top: 2rem;
 }
 
 /* 
@@ -511,7 +511,7 @@ a {
 }
 
 .mission h2 {
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   font-size: 45px;
   font-weight: 200;
   text-align: center;
@@ -522,7 +522,7 @@ a {
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 2px;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
   font-family: 'Josefin Sans';
 }
 
