@@ -5,7 +5,19 @@ document.querySelector('.logo').textContent = "<CWJ/>";
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
-})
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var checkbox = document.getElementById("menuToggle");
+  var menuItems = document.querySelectorAll(".menu li a");
+
+  menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener("click", function () {
+      checkbox.checked = false;
+    });
+  });
+});
 
 function typewriterEffect() {
   const headerText = document.getElementById('header-text');
