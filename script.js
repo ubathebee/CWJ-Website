@@ -1,22 +1,3 @@
-// Function to detect Safari browser
-function isSafari() {
-  var userAgent = navigator.userAgent;
-  console.log("User Agent:", userAgent);
-  return /^((?!chrome|android).)*safari/i.test(userAgent);
-}
-
-// Function to display a message for Safari users
-function showMessageForSafari() {
-  if (isSafari()) {
-    alert("You are using Safari. Safari-specific features may be applied.");
-  } else {
-    alert("You are not using Safari.");
-  }
-}
-
-// Call the function when the page loads
-window.onload = showMessageForSafari;
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 document.querySelector('.logo').textContent = "<CWJ/>";
