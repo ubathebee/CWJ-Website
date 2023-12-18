@@ -805,6 +805,7 @@ a {
 .button-container {
   padding: 1rem 0;
   justify-content: center;
+
 }
 
 @media screen and (max-width: 768px) {
